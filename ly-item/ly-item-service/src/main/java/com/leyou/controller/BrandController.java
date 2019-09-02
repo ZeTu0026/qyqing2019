@@ -47,6 +47,7 @@ public class BrandController {
         List<Brand> brands = brandService.queryBrandByCategory(cid);
         if(brands!=null&&brands.size()>0){
             System.out.println("");
+            System.out.println("uuuuuuu");
             return ResponseEntity.ok(brands);
 
         }
