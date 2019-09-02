@@ -46,7 +46,6 @@ public class BrandController {
     public ResponseEntity<List<Brand>> queryBrandByCategory(@PathVariable("id") Long cid){
         List<Brand> brands = brandService.queryBrandByCategory(cid);
         if(brands!=null&&brands.size()>0){
-            System.out.println("456456456465465");
             return ResponseEntity.ok(brands);
 
         }
